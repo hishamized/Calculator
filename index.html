@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <div id="calculator" class="calculator">
+            <small> <strong>Created By : Mohammad Hisham</strong> </small>
+            <div class="bar item">
+                <button onclick="minWindow()" class="bar-buttons minimize"> - </button>
+                <button onclick="maxWindow()" class="bar-buttons maximize"> &#9634 </button>
+                <button onclick="exitCal()" class="bar-buttons cross"> x </button>
+            </div>
+            <h4>Mathematical Operations</h4>
+            <div class="firstNum screen item">
+                <label for="">First Number</label>
+                <input type="text" name="screen1" id="screen1">
+            </div>
+            <div class="secondNum screen item">
+                <label for="">Second Number</label>
+                <input type="text" name="screen2" id="screen2">
+            </div>
+            <div class="answer screen item">
+                <label for="">Answer</label>
+                <input type="text" name="screen3" id="screen3">
+            </div>
+            <div class="buttons">
+                <button onclick="addition()" class="addition item button">Addition</button>
+                <button onclick="subtraction()" class="subtraction item button">Subtraction</button>
+                <button onclick="mmultiplication()" class="multiply item button">Multiplication</button>
+                <div class="buttons-row">
+                    <button onclick="division()" class="division item button">Division</button>
+                    <button onclick="power()" class="exponent item button">Exponent</button>
+                </div>
+                <button onclick="clean()" class="exit item button">Exit</button>
+            </div>
+        </div>
+    </section>
+    <script src="index.js" ></script>
+</body>
+</html>
